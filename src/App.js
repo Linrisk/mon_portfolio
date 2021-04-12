@@ -37,22 +37,22 @@ return(
     <main>
       <Switch>
         
-      <Route path="/" exact>
+      <Route path="/mon_portfolio/" exact>
         <Home />  
       </Route>
-      <Route path="/about" exact>
+      <Route path="/mon_portfolio/about" exact>
         <About />
       </Route>
-      <Route path="/contact" exact>
+      <Route path="/mon_portfolio/contact" exact>
         <Contact />
       </Route>
-      <Route path="/projects" exact>
+      <Route path="/mon_portfolio/projects" exact>
         <Projects />
       </Route>
-      <Route path="/services" exact>
+      <Route path="/mon_portfolio/services" exact>
         <Services />
       </Route>
-      <Redirect to="/" />
+      <Redirect to="/mon_portfolio/" />
       </Switch>
     </main>
   </Router>
