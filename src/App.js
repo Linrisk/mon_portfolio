@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css';// eslint-disable-next-line
+import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch }
+  from 'react-router-dom';
+  import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import About from './pages/About/About';
+import Home from './pages/Home/Home';
+import Contact from './pages/Contact/Contact';
+import Services from './pages/Services/Services';
+import Projects from './pages/Projects/Projects';
+import NavBar from './components/Navbar/Navbar';
+import Particles from './components/Particles_Back';
+
+
+const App =()=>{
+return(
+
+  
+<div className="containerprincipal h-100 w-100 position-absolute">
+
+
+  <div className="App_back"  style={{ position: 'relative', overflow: "hidden", width: "100%", height: "100%" }}>
+  <div style={{ position: 'absolute', width: '100%', height: '100%'}}>
+    <Particles height="100%" width="100%" />
+  </div>
+
+  
+  
+  <Router>
+    
+    <NavBar/>
+    <main>
+      <Switch>
+        
+      <Route path="/" exact>
+        <Home />  
+      </Route>
+      <Route path="/about" exact>
+        <About />
+      </Route>
+      <Route path="/contact" exact>
+        <Contact />
+      </Route>
+      <Route path="/projects" exact>
+        <Projects />
+      </Route>
+      <Route path="/services" exact>
+        <Services />
+      </Route>
+      <Redirect to="/" />
+      </Switch>
+    </main>
+  </Router>
+
+  </div>
+  </div>
+);
 }
+
 
 export default App;

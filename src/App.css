@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -13,15 +14,36 @@
   }
 }
 
+
+.containerprincipal {
+  background:linear-gradient(90deg,#402AAC,#3FE8C6);
+  background-position: absolute;
+  background-repeat: no-repeat;
+  height: 100% !important;
+  width: 100%  !important  ;
+  background-size: cover;
+}
+
+
+.App_Back {
+  position: "absolute";
+  top: 0;
+  left: 0;
+  width: "100%"  !important;
+  height: "100%";
+  z-index: -3000;
+}
+
+
 .App-header {
-  background-color: #282c34;
+  background-color: yellow;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: red;
 }
 
 .App-link {
@@ -35,4 +57,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+/*Navbar */
+.navbar{
+  width: 100%;;
 }
