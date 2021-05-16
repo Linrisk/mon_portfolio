@@ -16,7 +16,7 @@
 
 
 .containerprincipal {
-  background:linear-gradient(90deg,#402AAC,#3FE8C6);
+  background:linear-gradient(90deg,#de6161,#2657eb);
   background-position: absolute;
   background-repeat: no-repeat;
   height: 100% !important;
@@ -64,4 +64,19 @@
 /*Navbar */
 .navbar{
   width: 100%;;
+}
+.home-section{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction:column;
+  top: 0;
+  bottom: 0;
+}
+
+
+.btn {
+  border : solid 4px #20317d ;
+  border-radius: 55px;
 }

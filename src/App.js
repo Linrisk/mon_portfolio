@@ -37,7 +37,7 @@ return(
     <main>
       <Switch>
         
-      <Route path="/" exact>
+      <Route path="/mon_portfolio" exact>
         <Home />  
       </Route>
       <Route path="/about" exact>
@@ -52,7 +52,7 @@ return(
       <Route path="/services" exact>
         <Services />
       </Route>
-      <Redirect to="/" />
+      <Redirect to="/mon_portfolio" />
       </Switch>
     </main>
   </Router>
